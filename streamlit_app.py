@@ -43,8 +43,5 @@ streamlit.text("The fruit load list contains :")
 streamlit.dataframe(my_data_rows)
 
 streamlit.text('What fruit would you like to add?')
-
-my_cur.execute("INSERT INTO PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST VALUES(%s)", [
-    self.t1.text
-])
+add_my_fruit = streamlit.text_input("label goes here", default_value_goes_here)
 
