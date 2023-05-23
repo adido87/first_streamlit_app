@@ -44,4 +44,4 @@ streamlit.dataframe(my_data_rows)
 
 streamlit.text('What fruit would you like to add?')
 #add_my_fruit = streamlit.text_input("label goes here", default_value_goes_here)
-
+add_my_fruit = st.text_input(fruit = "What fruit would you like to add ?" )
