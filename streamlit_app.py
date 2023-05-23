@@ -41,3 +41,10 @@ my_cur.execute("SELECT * from fruit_load_list")
 my_data_rows = my_cur.fetchall()
 streamlit.text("The fruit load list contains :")
 streamlit.dataframe(my_data_rows)
+
+What fruit would you like to add?
+
+cur.execute("INSERT INTO PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST VALUES(%s)", [
+    self.t1.text
+])
+
