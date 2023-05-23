@@ -44,7 +44,7 @@ streamlit.dataframe(my_data_rows)
 
 What fruit would you like to add?
 
-cur.execute("INSERT INTO PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST VALUES(%s)", [
+my_cur.execute("INSERT INTO PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST VALUES(%s)", [
     self.t1.text
 ])
 
